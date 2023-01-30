@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://kit.fontawesome.com/cc7824a6d3.js" crossorigin="anonymous"></script>
     <title>YosKad</title>
 </head>
 
 <body>
     <div id="header">
-        <div id="container">
+        <div class="container">
             <nav>
                 <img class="logo" src="/img/logo1.svg" alt="logo">
                 <ul>
@@ -48,15 +49,81 @@
                             quod sunt exercitationem, necessitatibus dolorem omnis sed nesciunt rerum. Minima voluptatum
                             repellendus numquam fugit ducimus vitae ex itaque</p>
 
-                            <div class="tab-titles">
-                                <p class="tab-links active-link">Skils</p>
-                                <p class="tab-links">Experience</p>
-                                <p class="tab-links">Education</p>
-                            </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Develoer</span><br>Full-Stack Developer</li>
+                                <li><span>App Develoer</span><br>Python Develoer</li>
+                                <li><span>Process Engineer</span><br>Practical Engineer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Front-End Developer</span><br>Civil Servant</li>
+                                <li><span>Process Engineer</span><br>Civil Servant</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Full-Stack at Elta</li>
+                                <li><span>2021</span><br>Front-End React at Abra</li>
+                                <li><span>2016</span><br>Practical Engineer at TCB</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!---------- services  ---------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
+                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
+                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
+                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/app.js">
+
+            // var tablinks = document.getElementsByClassName("tab-links")
+            // var tabcontents = document.getElementsByClassName("tab-contents")
+
+            // function opentab(tabname) {
+            //     for (tablink of tablinks) {
+            //         tablink.classList.remove("active-link")
+            //     }
+            //     for (tabcontent of tabcontents) {
+            //         tabcontent.classList.remove("active-tab")
+            //     }
+            // }
+        </script>
 </body>
 
 </html>
