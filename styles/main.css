@@ -293,6 +293,7 @@ transition: background 0.8s;
 .btn.btn2 {
 display: inline-block;
 background-color: var(--primary);
+transition: transform 0.5s;
 }
 
 .contact-right form {
@@ -316,6 +317,11 @@ padding: 14px 60px;
 font-size: 18px;
 margin-top: 20px;
 cursor: pointer;
+transition: transform 0.5s;
+}
+
+.btn2:hover {
+    transform: scale(1.1);
 }
 
 
