@@ -21,20 +21,22 @@
         <div class="container">
             <nav>
                 <img class="logo" src="/img/logo2.svg" alt="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark nav-icon" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars nav-icon" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <h1 class="small-header">Full-Stack Developer <span></span> </h1>
-                <h1>Hello, <span></span></h1>
-                <h1>My Name is <span></span></h1>
-                <h1 class="h1-mark">Yossef <span></span></h1>
+                <h1 class="main-title">Hello, <span></span></h1>
+                <h1 class="main-title" >My Name is <span></span></h1>
+                <h1 class="h1-mark main-title">Yossef <span></span></h1>
             </div>
         </div>
 
@@ -121,7 +123,7 @@
                 <h2 class="sub-title"> My Work</h2>
                 <div class="work-list">
                     <div class="work">
-                        <img src="/img/weatherapp.png">
+                        <img src="/img/weatherapp1.png">
                         <div class="layer">
                             <h3>WeatherApp</h3>
                             <p>This weather app can show the weather in any place on earth right now , also can show the
@@ -148,8 +150,44 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="btn">See more</a>
             </div>
         </div>
+
+        <!-- ---------- contact --------  -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>yoskad@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0547944234</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/yossefk/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/yossef-kadosh-88a89122b/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/YosKad"><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="/img/Yossef-Kadosh-CV .pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made by YosKad <i class="fa-regular fa-copyright"></i> 2023 All rights reservevd.</p>
+            </div>
+        </div>
+
+
 
         <script src="/app.js"></script>
 </body>
