@@ -1,7 +1,9 @@
+/* ---- header section including nav bar ----*/
+
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(/img/background-img.jpg);
+    background-image: url(/img/back-fix.png);
     background-size: cover; 
      background-position: center;
 }
@@ -9,6 +11,7 @@
 .container {
     padding: 10px 10%;
 }
+
 
 
 nav {
@@ -50,8 +53,9 @@ width: 100%;
     margin-top: 20%;
     font-size: 30px;
 }
+/* ---- end header section including nav bar ----*/
 
-
+/* ----- home page title effects -----*/
 
 .h1-mark {
     color: var(--primary);
@@ -61,6 +65,7 @@ width: 100%;
     font-size: 18px;
     opacity: 0.6;
 }
+
 
 
 .header-text h1 {
@@ -134,3 +139,5 @@ animation-delay: 2s;
         
     }
 }
+
+/* ----- end home page title effects -----*/

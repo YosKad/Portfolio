@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/main.css">
     <script src="https://kit.fontawesome.com/cc7824a6d3.js" crossorigin="anonymous"></script>
@@ -15,7 +20,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img class="logo" src="/img/logo1.svg" alt="logo">
+                <img class="logo" src="/img/logo2.svg" alt="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -45,9 +50,8 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur numquam fugiat,
-                            quod sunt exercitationem, necessitatibus dolorem omnis sed nesciunt rerum. Minima voluptatum
-                            repellendus numquam fugit ducimus vitae ex itaque</p>
+                        <p>i am Saiyan raised on Earth and the overall main protagonist of the Dragon Ball series. i was
+                            born with the name born Kakarot</p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -90,40 +94,64 @@
                         <h2>Web Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
                             mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                            <a href="#">Learn more</a>
+                        <a href="#">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-brands fa-app-store"></i>
                         <h2>App Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
                             mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                            <a href="#">Learn more</a>
+                        <a href="#">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-crop"></i>
                         <h2>Web Design</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
                             mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                            <a href="#">Learn more</a>
+                        <a href="#">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="/app.js">
+        <!-- -------- Portfolio ------->
 
-            // var tablinks = document.getElementsByClassName("tab-links")
-            // var tabcontents = document.getElementsByClassName("tab-contents")
+        <div id="portfolio">
+            <div class="container">
+                <h2 class="sub-title"> My Work</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/img/weatherapp.png">
+                        <div class="layer">
+                            <h3>WeatherApp</h3>
+                            <p>This weather app can show the weather in any place on earth right now , also can show the
+                                day/night time</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/img/work-2.png">
+                        <div class="layer">
+                            <h3>Future App</h3>
+                            <p>This weather app can show the weather in any place on earth right now , also can show the
+                                day/night time</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/img/work-3.png">
+                        <div class="layer">
+                            <h3>Futere App</h3>
+                            <p>This weather app can show the weather in any place on earth right now , also can show the
+                                day/night time</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            // function opentab(tabname) {
-            //     for (tablink of tablinks) {
-            //         tablink.classList.remove("active-link")
-            //     }
-            //     for (tabcontent of tabcontents) {
-            //         tabcontent.classList.remove("active-tab")
-            //     }
-            // }
-        </script>
+        <script src="/app.js"></script>
 </body>
 
 </html>
