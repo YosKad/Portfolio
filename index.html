@@ -23,13 +23,13 @@
                 <img class="logo" src="/img/logo2.svg" alt="logo">
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark nav-icon" onclick="closemenu()"></i>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark mobile-icon"   onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars nav-icon" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars mobile-icon"  onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -173,9 +173,9 @@
                         <a href="/img/Yossef-Kadosh-CV .pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
@@ -190,6 +190,7 @@
 
 
         <script src="/app.js"></script>
+        <script src="/form.js"></script>
 </body>
 
 </html>
