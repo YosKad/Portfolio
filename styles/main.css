@@ -356,7 +356,7 @@ nav .mobile-icon {
     text-align: center;
   }
   #header {
-    background-image: url(/img/phone-back.png);
+    background-image: url(../img/phone-back.png);
   }
 
   .header-text {

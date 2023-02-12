@@ -1,200 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-        <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <script src="https://kit.fontawesome.com/cc7824a6d3.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/cc7824a6d3.js"
+      crossorigin="anonymous"
+    ></script>
     <title>YosKad</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img class="logo" src="../img/logo2.svg" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark mobile-icon"   onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars mobile-icon"  onclick="openmenu()"></i>
-            </nav>
+      <div class="container">
+        <nav>
+          <img class="logo" src="../img/logo2.svg" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark mobile-icon" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars mobile-icon" onclick="openmenu()"></i>
+        </nav>
 
-            <div class="header-text">
-                <h1 class="small-header">Full-Stack Developer <span></span> </h1>
-                <h1 class="main-title">Hello, <span></span></h1>
-                <h1 class="main-title" >My Name is <span></span></h1>
-                <h1 class="h1-mark main-title">Yossef <span></span></h1>
-            </div>
+        <div class="header-text">
+          <h1 class="small-header">Full-Stack Developer <span></span></h1>
+          <h1 class="main-title">Hello, <span></span></h1>
+          <h1 class="main-title">My Name is <span></span></h1>
+          <h1 class="h1-mark main-title">Yossef <span></span></h1>
         </div>
-
-
+      </div>
     </div>
     <! -- about me section -- !>
 
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="../img/user.png" alt="">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>i am Saiyan raised on Earth and the overall main protagonist of the Dragon Ball series. i was
-                            born with the name born Kakarot</p>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="../img/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              i am Saiyan raised on Earth and the overall main protagonist of
+              the Dragon Ball series. i was born with the name born Kakarot
+            </p>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Develoer</span><br>Full-Stack Developer</li>
-                                <li><span>App Develoer</span><br>Python Develoer</li>
-                                <li><span>Process Engineer</span><br>Practical Engineer</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Front-End Developer</span><br>Civil Servant</li>
-                                <li><span>Process Engineer</span><br>Civil Servant</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2023</span><br>Full-Stack at Elta</li>
-                                <li><span>2021</span><br>Front-End React at Abra</li>
-                                <li><span>2016</span><br>Practical Engineer at TCB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Develoer</span><br />Full-Stack Developer</li>
+                <li><span>App Develoer</span><br />Python Develoer</li>
+                <li><span>Process Engineer</span><br />Practical Engineer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Future Job As Full Stack</span><br />Civil Servant
+                </li>
+                <li><span>Front-End Developer</span><br />Civil Servant</li>
+                <li><span>Process Engineer</span><br />Civil Servant</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023</span><br />Full-Stack at Elta</li>
+                <li><span>2021</span><br />Front-End React at Abra</li>
+                <li><span>2016</span><br />Practical Engineer at TCB</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!---------- services  ---------->
+    <!---------- services  ---------->
 
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
-                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>App Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
-                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusantium voluptas
-                            mollitia atque aperiam minus quibusdam! Accusantium alias suscipit deserunt.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-            </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusantium voluptas mollitia atque aperiam minus
+              quibusdam! Accusantium alias suscipit deserunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusantium voluptas mollitia atque aperiam minus
+              quibusdam! Accusantium alias suscipit deserunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusantium voluptas mollitia atque aperiam minus
+              quibusdam! Accusantium alias suscipit deserunt.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- -------- Portfolio ------->
+    <!-- -------- Portfolio ------->
 
-        <div id="portfolio">
-            <div class="container">
-                <h2 class="sub-title"> My Work</h2>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="../img/weatherapp1.png">
-                        <div class="layer">
-                            <h3>WeatherApp</h3>
-                            <p>This weather app can show the weather in any place on earth right now , also can show the
-                                day/night time</p>
-                            <a href="https://yoskad.github.io/WeatherApp-js/"  target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="../img/work-2.png">
-                        <div class="layer">
-                            <h3>Future App</h3>
-                            <p>This weather app can show the weather in any place on earth right now , also can show the
-                                day/night time</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="../img/work-3.png">
-                        <div class="layer">
-                            <h3>Futere App</h3>
-                            <p>This weather app can show the weather in any place on earth right now , also can show the
-                                day/night time</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">See more</a>
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="../img/weatherapp1.png" />
+            <div class="layer">
+              <h3>WeatherApp</h3>
+              <p>
+                This weather app can show the weather in any place on earth
+                right now , also can show the day/night time
+              </p>
+              <a
+                href="https://yoskad.github.io/WeatherApp-js/"
+                target="”_blank”"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
+          <div class="work">
+            <img src="../img/work-2.png" />
+            <div class="layer">
+              <h3>Future App</h3>
+              <p>
+                This weather app can show the weather in any place on earth
+                right now , also can show the day/night time
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="../img/work-3.png" />
+            <div class="layer">
+              <h3>Futere App</h3>
+              <p>
+                This weather app can show the weather in any place on earth
+                right now , also can show the day/night time
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
 
-        <!-- ---------- contact --------  -->
+    <!-- ---------- contact --------  -->
 
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>yoskad@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>0547944234</p>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/yossefk/"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/yossef-kadosh-88a89122b/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/YosKad"><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <a href="/img/Yossef-Kadosh-CV .pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>yoskad@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0547944234</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/yossefk/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/yossef-kadosh-88a89122b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/YosKad"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="copyright">
-                <p>Made by YosKad <i class="fa-regular fa-copyright"></i> 2023 All rights reservevd.</p>
-            </div>
+            <a href="/img/Yossef-Kadosh-CV .pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Type Your Message Here"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Made by YosKad <i class="fa-regular fa-copyright"></i> 2023 All rights
+          reservevd.
+        </p>
+      </div>
+    </div>
 
-
-
-        <script src="../app.js"></script>
-        <script src="../form.js"></script>
-</body>
-
+    <script src="app.js"></script>
+    <script src="form.js"></script>
+  </body>
 </html>
