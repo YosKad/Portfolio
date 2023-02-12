@@ -37,6 +37,11 @@ body {
   flex-wrap: wrap;
 }
 
+.contact-left p > a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .about-col-1 {
   flex-basis: 35%;
 }
