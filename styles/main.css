@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
@@ -101,6 +101,13 @@ body {
 .tab-contents.active-tab {
   display: block;
 }
+
+/* .about-col-2 h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+} */
 
 /* --end about me section --*/
 
@@ -331,14 +338,14 @@ form .btn2 {
 
 /* ------ mobile screen ----*/
 nav .mobile-icon {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(/img/phone-back.png);
   }
-  
+
   .header-text {
     margin-top: 100%;
     font-size: 16px;
@@ -349,7 +356,7 @@ nav .mobile-icon {
   nav .mobile-icon {
     display: block;
     font-size: 25px;
-}
+  }
   nav ul {
     background: var(--primary);
     position: fixed;
@@ -405,9 +412,12 @@ nav .mobile-icon {
   .contact-right {
     flex-basis: 100%;
   }
-  /* .copyright {
-    font-size: 14px;
-   } */
 }
 
 /* ------ end mobile screen ----*/
+
+#msg {
+  color: lightgreen;
+  margin-top: -40px;
+  display: block;
+}
